@@ -1,29 +1,278 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>ISTATOY</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sr. D. Anony Mouse</title>
+
 <style>
-body {
-    max-width: 800px;
-    margin: auto;
-    font-family: Georgia, serif;
-    padding: 30px;
+:root {
+    --bg: #f3ede2;
+    --paper: #fffdf8;
+    --text: #232323;
+    --muted: #6a6258;
+    --line: #d8d0c4;
+    --accent: #b64026;
 }
-img {
-    max-width: 100%;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    padding: 1rem 0 2rem;
+}
+
+.site-title {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: -0.04em;
+}
+
+.site-title span {
+    color: var(--accent);
+}
+
+.tagline {
+    max-width: 680px;
+    margin: 0.75rem 0 0;
+    color: var(--muted);
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+}
+
+nav a {
+    margin-right: 1.25rem;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+h2 {
+    margin-top: 2.5rem;
+    font-size: 1.7rem;
+}
+
+h3 {
+    margin-bottom: 0.4rem;
+}
+
+.hero {
+    max-width: 760px;
+    font-size: 1.25rem;
+    color: var(--muted);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--accent);
+    border-radius: 999px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.button:hover {
+    background: var(--accent);
+    color: var(--paper);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.card {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.placeholder {
+    height: 190px;
+    background:
+        linear-gradient(135deg, #b64026 0%, #e5a23a 40%, #0f5c74 100%);
+}
+
+.placeholder.alt1 {
+    background:
+        linear-gradient(135deg, #111111 0%, #b64026 55%, #f3ede2 100%);
+}
+
+.placeholder.alt2 {
+    background:
+        linear-gradient(135deg, #0f5c74 0%, #f3ede2 45%, #d49a2a 100%);
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content p {
+    color: var(--muted);
+}
+
+.note {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent);
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+footer {
+    padding: 2rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 1rem;
+    }
+
+    main {
+        padding: 1.25rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<h1>I Saw This And Thought Of You...</h1>
+<div class="wrapper">
 
-<img src="whitebull.jpg">
+<header>
+    <h1 class="site-title">Sr. D. <span>Anony</span> Mouse</h1>
 
-<p>
-The story behind this card...
-</p>
+    <p class="tagline">
+        Original acrylic backgrounds and bold silhouette artwork from Mallorca.
+        Each piece unique. No prints. No duplicates.
+    </p>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Colour, contrast, mischief.</h1>
+
+    <p class="hero">
+        Every canvas starts with an original painted background.
+        Then comes the silhouette: simple, sharp, recognisable, and just a little bit wicked.
+    </p>
+
+    <a href="#" class="button">View the gallery</a>
+
+    <h2>Recent Work</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+            <div class="placeholder"></div>
+            <div class="card-content">
+                <h3>White Bull</h3>
+                <p>A Spanish icon stripped back to colour, stance and attitude.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="placeholder alt1"></div>
+            <div class="card-content">
+                <h3>Flamenco</h3>
+                <p>Movement, drama and shape — without clutter.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="placeholder alt2"></div>
+            <div class="card-content">
+                <h3>Guitarist</h3>
+                <p>Minimal detail. Maximum recognition.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>The Curious Case of Sr. D. Anony Mouse</h2>
+
+    <p>
+        Some artists sign their work with great flourish.
+        Others leave a discreet mouse in the corner and quietly disappear.
+    </p>
+
+    <p class="note">
+        The mouse is small. The artwork is not.
+    </p>
+
+</main>
+
+<footer>
+    <p>© 2026 Peter de Pradines · Sr. D. Anony Mouse</p>
+</footer>
+
+</div>
 
 </body>
 </html>
