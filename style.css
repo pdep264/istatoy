@@ -63,7 +63,7 @@ header {
 
 .site-logo {
     width: 25px;
-    height: auto;
+    height: 25px;
     flex-shrink: 0;
 
 /* =========================================================
