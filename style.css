@@ -27,11 +27,18 @@ body {
 }
 
 /* =========================================================
-HEADER
-========================================================= */
+   HEADER
+   ========================================================= */
 
 header {
     padding: 1rem 0 2rem;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .site-title {
@@ -47,23 +54,17 @@ header {
     color: var(--accent);
 }
 
+.site-logo {
+    width: 35px;
+    height: auto;
+    flex-shrink: 0;
+}
+
 .tagline {
     max-width: 680px;
     margin: 0.75rem 0 0;
     color: var(--muted);
     font-size: 1.2rem;
-}
-
-.site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.site-logo {
-    width: 35px;
-    height: 35px;
-    flex-shrink: 0;
 }
 
 /* =========================================================
@@ -86,7 +87,6 @@ nav a {
 nav a:hover {
     color: var(--accent);
 }
-
 
 /* =========================================================
    MAIN CONTENT
@@ -131,7 +131,6 @@ h3 {
     font-size: 1.1rem;
 }
 
-
 /* =========================================================
    BUTTONS
    ========================================================= */
@@ -151,7 +150,6 @@ h3 {
     background: var(--accent);
     color: var(--paper);
 }
-
 
 /* =========================================================
    GALLERY
@@ -210,7 +208,6 @@ h3 {
     color: var(--muted);
 }
 
-
 /* =========================================================
    SERVICE / PRODUCT PAGES
    Used for Harlequin and later similar pages
@@ -258,7 +255,6 @@ h3 {
     line-height: 1.2;
 }
 
-
 /* =========================================================
    NOTES / CALLOUTS
    ========================================================= */
@@ -270,7 +266,6 @@ h3 {
     color: var(--muted);
     font-size: 1.1rem;
 }
-
 
 /* =========================================================
    IMAGES
@@ -284,7 +279,6 @@ h3 {
     border-radius: 12px;
 }
 
-
 /* =========================================================
    FOOTER
    ========================================================= */
@@ -294,7 +288,6 @@ footer {
     color: var(--muted);
     font-size: 0.9rem;
 }
-
 
 /* =========================================================
    MOBILE
@@ -308,6 +301,14 @@ footer {
 
     main {
         padding: 1.25rem;
+    }
+
+    .site-header {
+        gap: 1rem;
+    }
+
+    .site-logo {
+        width: 30px;
     }
 
     nav a {
