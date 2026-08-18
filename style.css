@@ -60,6 +60,12 @@ header {
     flex-shrink: 0;
 }
 
+.example {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
 .tagline {
     max-width: 680px;
     margin: 0.75rem 0 0;
