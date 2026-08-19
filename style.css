@@ -215,6 +215,99 @@ h3 {
 }
 
 /* =========================================================
+   INDEX PAGE
+   ========================================================= */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "left english right"
+        "spanish centre german";
+    gap: 1.25rem;
+    align-items: stretch;
+}
+
+.home-image-left {
+    grid-area: left;
+}
+
+.home-english {
+    grid-area: english;
+}
+
+.home-image-right {
+    grid-area: right;
+}
+
+.home-spanish {
+    grid-area: spanish;
+}
+
+.home-image-centre {
+    grid-area: centre;
+}
+
+.home-german {
+    grid-area: german;
+}
+
+/* IMAGE PANELS */
+
+.home-image {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* LANGUAGE PANELS */
+
+.home-language {
+    padding: 1rem;
+}
+
+.home-language h2 {
+    margin-top: 0;
+    font-size: 1.7rem;
+}
+
+.home-language h3 {
+    margin-top: 1.5rem;
+}
+
+.home-language p {
+    color: var(--muted);
+}
+
+.home-language a {
+    color: inherit;
+}
+
+.home-language h2 a {
+    color: #551a8b;
+}
+
+.home-email {
+    margin-top: 2rem;
+}
+
+.home-email a {
+    color: #0000ee;
+}
+
+/* =========================================================
    SERVICE / PRODUCT PAGES
    Used for Harlequin and later similar pages
    ========================================================= */
@@ -324,5 +417,30 @@ footer {
 
     .price-grid {
         grid-template-columns: 1fr;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "left"
+            "english"
+            "right"
+            "spanish"
+            "centre"
+            "german";
+    }
+
+    .home-image {
+        min-height: 0;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .home-language {
+        padding: 0.5rem 0;
     }
 }
