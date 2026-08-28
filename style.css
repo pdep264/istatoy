@@ -307,6 +307,20 @@ h3 {
     color: #0000ee;
 }
 
+.home-hero {
+    width: 100%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.home-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
 /* =========================================================
    SERVICE / PRODUCT PAGES
    Used for Harlequin and later similar pages
