@@ -61,7 +61,7 @@ header {
 }
 
 .example {
-    width: 200px;
+    width: 250px;
     height: auto;
     flex-shrink: 0;
 }
